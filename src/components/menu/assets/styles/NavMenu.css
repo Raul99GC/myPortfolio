@@ -1,0 +1,30 @@
+/* ********** Site Styles  ********** */
+
+
+
+.nav {
+   margin-top: 13rem;
+}
+
+.nav-menu {
+   display: flex;
+   flex-direction: column;
+   gap: 3rem;
+}
+
+.nav-menu__link{
+   color: var(--color-withe);
+   font-weight: bold;
+}
+
+.nav-menu__link:hover {
+   color: var(--color-yellow);
+
+}
+
+.nav-menu__icon {
+   font-size: 2.5rem;
+   margin-right: 2rem;
+   color: var(--color-yellow);
+}
+

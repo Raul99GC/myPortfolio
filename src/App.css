@@ -1,0 +1,50 @@
+/* ********** Utilities  ********** */
+
+
+
+
+
+/* ********** Site Styles  ********** */
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #353353;
+    overflow-x: hidden;
+}
+
+.header-desktop {
+    width: 29rem;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: #4a4865 1px solid;
+    color: #fff;
+    overflow-x: hidden;
+    transition: var(--animation-3s);
+}
+
+.header-mobile {
+    position: relative;
+    width: 100%;
+
+}
+
+@media (min-width: 576px) {
+    .header-desktop {
+        transform: translateX(-100%);
+    }
+}
+
+@media (min-width: 992px) {
+    .header-desktop {
+        transform: translateX(-100%);
+    }
+
+    
+}

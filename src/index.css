@@ -1,0 +1,53 @@
+/* ********** Customs Properties  ********** */
+:root {
+    --color-withe: #fff;
+    --color-yellow: #f8cc5b;
+
+    --animation-3s: .3s;
+}
+
+/* ********** Reset  ********** */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* ********** Utilities  ********** */
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+/* ********** Site Styles  ********** */

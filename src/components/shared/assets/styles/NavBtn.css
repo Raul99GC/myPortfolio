@@ -1,0 +1,13 @@
+
+.nav-btn {
+    width: 4rem;
+    aspect-ratio: 1;
+    background: none;
+    border: none;
+}
+
+.nav-btn-hamburger {
+    font-size: 3.3rem;
+    color: var(--color-withe);
+    cursor: pointer;
+}
