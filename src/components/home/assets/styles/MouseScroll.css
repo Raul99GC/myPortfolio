@@ -1,0 +1,39 @@
+
+
+.mouse {
+    width: 2rem;
+    height: 2.6rem;
+    margin-top: 1rem;
+    border: var(--color-withe) 1px solid;
+    border-radius: 1.6rem;
+    position: relative;
+}
+
+.mouse__wheel {
+    width: .3rem;
+    height: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-withe);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15%;
+    opacity: 1;
+    animation: scroll 2s infinite;
+    -webkit-animation: scroll 2s infinite;
+
+}
+
+@keyframes scroll {
+	to {
+		opacity: 0;
+		top: 70%;
+	}
+}
+
+@-webkit-keyframes scroll {
+	to {
+		opacity: 0;
+		top: 70%;
+	}
+}

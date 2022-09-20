@@ -4,10 +4,11 @@
     aspect-ratio: 1;
     background: none;
     border: none;
+    margin-left: 1rem;
 }
 
 .nav-btn-hamburger {
-    font-size: 3.3rem;
+    font-size: 4rem;
     color: var(--color-withe);
     cursor: pointer;
 }

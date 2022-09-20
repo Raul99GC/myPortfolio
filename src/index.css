@@ -2,8 +2,20 @@
 :root {
     --color-withe: #fff;
     --color-yellow: #f8cc5b;
+    --color-profile1: #fff7ba;
+    --color-profile2: ##d24e70;
 
-    --animation-3s: .3s;
+
+    --animation-3ms: .3s;
+    --animation-6ms: .3s;
+
+    --trans-on-formHeader: translateX(0);
+    --trans-off-formHeader: translateX(-100%);
+    --trans-on-all-content: translateX(0);
+    --trans-off-all-content: translateX(29rem);
+
+    --z-10: 10;
+    --z-100: 100;
 }
 
 /* ********** Reset  ********** */
@@ -17,6 +29,8 @@
 *::after,
 *::before {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -48,6 +62,16 @@ img {
 .flex {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
+.flex--column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* ********** Site Styles  ********** */

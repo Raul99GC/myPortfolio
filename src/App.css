@@ -1,7 +1,22 @@
+
 /* ********** Utilities  ********** */
 
+.btn-on {
+    transform: var(--trans-on-formHeader);
+}
 
 
+.btn-off {
+    transform: var(--trans-off-formHeader);
+}
+
+.content-on {
+    transform: var(--trans-on-all-content);
+}
+
+.content-off {
+    transform: var(--trans-off-all-content);
+}
 
 
 /* ********** Site Styles  ********** */
@@ -26,25 +41,48 @@
     border-right: #4a4865 1px solid;
     color: #fff;
     overflow-x: hidden;
-    transition: var(--animation-3s);
+    transition: var(--animation-6ms);
 }
 
 .header-mobile {
     position: relative;
     width: 100%;
+    padding: 1rem 0;
+    transition: var(--animation-6ms);
+    
 
 }
 
+.header-mobile__container {
+    max-width: 54rem;
+    display: flex;
+    gap: 3rem;
+    margin: 0;
+}
+
+.main {
+    transition: var(--animation-6ms);
+}
+
+
 @media (min-width: 576px) {
-    .header-desktop {
-        transform: translateX(-100%);
+    .header-mobile__container {
+        margin: 0 auto; 
     }
 }
 
 @media (min-width: 992px) {
     .header-desktop {
-        transform: translateX(-100%);
+        transform: translateX(0);
+        
     }
 
+    .header-mobile{
+        display: none;
+    }
+    
+    .main {
+        padding-left: 29rem;
+    }
     
 }

@@ -1,0 +1,19 @@
+
+.nav-social {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.nav-social__content {
+    gap: 2rem;
+    font-size: 2.5rem;
+}
+
+.nav-social__icon {
+    color: var(--color-withe);
+    transition: var(--animation-3ms);
+}
+
+.nav-social__icon:hover {
+    color: var(--color-yellow);
+}

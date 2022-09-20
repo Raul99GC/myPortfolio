@@ -1,0 +1,84 @@
+.home {
+   width: 100%;
+   overflow: hidden;
+   position: relative;
+}
+
+.parallax-container {
+   width: 100%;
+   min-height: 100vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: .3s;
+}
+
+
+.home__slider {
+   width: 100%;
+   min-height: calc(100vh - 6rem);
+   flex-direction: column;
+   position: relative;
+   z-index: var(--z-100);
+}
+
+.home__title {
+   margin-top: 2rem;
+}
+
+.home_inf-box {
+   box-sizing: content-box;
+   display: flex;
+   max-width: 30rem;
+   height: 3rem;
+   margin-top: 2rem;
+   color: var(--color-withe);
+}
+
+.home__phrases {
+   overflow: hidden;
+}
+
+.home__phrase {
+   display: block;
+   align-items: center;
+   justify-content: center;
+   height: 60%;
+   padding-left: 1rem;
+   transform: translateY(200%);
+   animation: spin_words 3s infinite;
+}
+
+.home__botton {
+   margin-top: 2rem;
+   position: relative;
+}
+
+.home__scroll {
+   margin-top: 2rem;
+   position: absolute;
+   bottom: 4rem;
+}
+
+.home__p-scroll {
+   color: var(--color-withe);
+}
+
+
+
+@keyframes spin_words {
+   50% {
+      transform: translateY(12%);
+   }
+
+   100% {
+      transform: translateY(-200%);
+   }
+}
+
+
+@media (min-width: 992px) {
+   .parallax-container {
+      transition: .1s;
+   }
+}

@@ -1,0 +1,16 @@
+.profile-img {
+    width: 10.8rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--color-profile1);
+    overflow: hidden;
+    position: relative;
+}
+
+.profile-img__image {
+    width: 90%;
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
