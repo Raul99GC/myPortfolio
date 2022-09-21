@@ -1,6 +1,6 @@
 import React from 'react'
 import './assets/styles/Home.css'
-import { ProfileImage } from '../shared/ProfileImage'
+
 import TitleName from '../shared/TitleName'
 import { useState } from 'react'
 import { useEffect } from 'react'
@@ -9,6 +9,7 @@ import { Buttons } from '../shared/Buttons'
 import { MouseScroll } from './MouseScroll'
 import ParallaxImages from './ParallaxImages'
 import { useRef } from 'react'
+import profileImage from '../../../public/profile-image.png'
 
 
 const Home = () => {
@@ -58,9 +59,13 @@ const Home = () => {
         <ParallaxImages />
       </div>
       <div onMouseMoveCapture={mouseMov} className="home__slider flex--column">
-        <ProfileImage />
+        <div className="profile-img">
+          <img src={profileImage} alt="" className="profile-img__image" />
+        </div>
         <div className="home__title">
-          <TitleName />
+          <TitleName
+            inf={'Raul C.G'}
+          />
         </div>
         <div className="home_inf-box">
           <p className='home__inf-static'>Soy</p>

@@ -15,20 +15,24 @@ function App() {
 
       <div className="App">
 
-         <header className={`header-desktop ${btMenu ? 'btn-on' : 'btn-off' } `}>
-            <TitleName />
+         <header className={`header-desktop ${btMenu ? 'btn-on' : 'btn-off'} `}>
+            <TitleName
+               inf={'Raul C.G'}
+            />
             <NavMenu />
          </header>
-         <header className={`header-mobile ${btMenu ? 'content-off' : 'content-on' } `}>
+         <header className={`header-mobile ${btMenu ? 'content-off' : 'content-on'} `}>
             <div className="header-mobile__container">
-               <NavBtn 
-                  setBtMenu = {setBtMenu}
-                  btMenu = {btMenu}
+               <NavBtn
+                  setBtMenu={setBtMenu}
+                  btMenu={btMenu}
                />
-               <TitleName />
+               <TitleName
+                  inf={'Raul C.G'}
+               />
             </div>
          </header>
-         <main className={`main ${btMenu ? 'content-off' : 'content-on' }`}>
+         <main className={`main ${btMenu ? 'content-off' : 'content-on'}`}>
             <Home />
             <About />
          </main>

@@ -1,10 +1,10 @@
 import React from 'react'
 import './assets/styles/TitleName.css'
 
-const TitleName = () => {
+const TitleName = ({inf}) => {
     return (
         <div className="title">
-            <h2 className='title__name'>Raul C.G</h2>
+            <h2 className='title__name'>{inf}</h2>
         </div>
     )
 }

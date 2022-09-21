@@ -1,28 +1,26 @@
 
 .button {
     padding: 1.2rem 3.2rem;
-    margin-top: 2rem;
+    font-weight: 600;
     cursor: pointer;
     color: var(--color-withe);
     border-radius: 3rem;
     background-color: #ff4c60;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 1px 0px;
-    transition: var(--animation-3ms);
+    transition: .4s;
 }
 
 .button:hover{
     
-    animation: btn-hover .5s;
+    animation: btn-hover .4s;
 }
 
 @keyframes btn-hover {
     50% {
-        padding: .9rem 2.9rem;
-        font-size: 1.2rem;
+        transform: scale(.8);
     }
     100% {
-        margin-top: 1.5rem;
-        padding: 1.2rem 3.2rem;
+        transform: scale(1);
     }
 }
 

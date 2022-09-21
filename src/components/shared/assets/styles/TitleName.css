@@ -1,4 +1,9 @@
 
+.title {
+    position: relative;
+    z-index: 1;
+}
+
 .title__name {
     font-size: 3.3rem;
     color: #fff;

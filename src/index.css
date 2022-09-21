@@ -2,8 +2,11 @@
 :root {
     --color-withe: #fff;
     --color-yellow: #f8cc5b;
+
+    --color-content: #302f4e;
+
     --color-profile1: #fff7ba;
-    --color-profile2: ##d24e70;
+    --color-profile2: #47475d;
 
 
     --animation-3ms: .3s;
@@ -43,6 +46,7 @@ html {
 body {
     font-size: 16px;
     font-family: 'DynaPuff', cursive;
+    background-color: #353353;
 }
 
 ul {
@@ -59,19 +63,10 @@ img {
 
 /* ********** Utilities  ********** */
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.flex--column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
 
 /* ********** Site Styles  ********** */
+
