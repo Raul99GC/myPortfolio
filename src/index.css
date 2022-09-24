@@ -10,7 +10,7 @@
 
 
     --animation-3ms: .3s;
-    --animation-6ms: .3s;
+    --animation-6ms: .6s;
 
     --trans-on-formHeader: translateX(0);
     --trans-off-formHeader: translateX(-100%);

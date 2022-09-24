@@ -6,6 +6,7 @@ import NavMenu from './components/menu/NavMenuScreen'
 import TitleName from './components/shared/TitleName'
 import Home from './components/home/Home'
 import About from './components/about/About'
+import Skills from './components/skills/Skills'
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
          <main className={`main ${btMenu ? 'content-off' : 'content-on'}`}>
             <Home />
             <About />
+            <Skills />
          </main>
       </div>
    )

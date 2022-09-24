@@ -12,10 +12,8 @@
 }
 
 .about__title {
-    
     position: relative;
     width: calc(100% - 8rem);
-    margin-left: 8rem;
     z-index: 1;
 }
 
@@ -39,6 +37,10 @@
 .profile-img--big {
     min-width: 15rem;
     background-color: var(--color-profile2);
+}
+
+.about__inf-container {
+    margin-top: 4rem;
 }
 
 .about__description {

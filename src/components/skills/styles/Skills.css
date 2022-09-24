@@ -1,0 +1,89 @@
+
+.skills {
+    width: 100%;
+    margin-top: 11rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skills__container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__title {
+    position: relative;
+    width: calc(100% - 8rem);
+    z-index: 1;
+}
+
+.skills__title::before {
+    content: "";
+    position: absolute;
+    width: 3.7rem;
+    aspect-ratio: 1;
+    background: url('../../../../../public/dots-bg-light.svg');
+    background-color: #353353;
+    z-index: 0;
+    top: -1.8rem;
+    left: -1.8rem;
+}
+
+
+.skills__content {
+    width: 100%;
+    padding: 0 2.5rem;
+    margin-top: 4rem;
+}
+
+.skills__content-box {
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+
+@media (min-width: 576px) {
+    .skills__container {
+        max-width: 540px;
+    }
+
+    .skills__content-box  {
+        gap: 6rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .skills__container {
+        max-width: 100%;
+    }  
+
+    .skills__content-box  {
+        gap: 4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .skills__container {
+        max-width: 960px;
+    }
+
+    
+
+}
+
+@media (min-width: 1200px) {
+    .skills__container {
+        max-width: 1140px;
+    }
+
+    .skills__content-box  {
+        gap: 6rem;
+    }
+}
