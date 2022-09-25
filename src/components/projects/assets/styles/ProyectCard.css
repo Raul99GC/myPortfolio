@@ -1,0 +1,152 @@
+.project-card {
+    box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+    background-color: #302f4e;
+    border-radius: 2rem;
+
+}
+
+.project-card__link-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.project-card__link-img:hover::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: absolute;
+}
+
+.project-card__link-img:hover::after {
+    content: '';
+    display: block;
+    width: 7rem;
+    height: 7rem;
+    background: var(--lik-img);
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+    background-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.project-card-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.project-card__inf {
+    align-items: flex-start;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    gap: 1rem;
+}
+
+.project-card__title {
+    color: var(--color-withe);
+}
+
+.project-card__description {
+    color: var(--color-withe);
+}
+
+.project-card__tags {
+    color: var(--color-withe);
+    font-size: 1.3rem;
+}
+
+.project-card__links {
+    height: 2rem;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.project-card__link {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+}
+
+.project-card__a {
+    width: 2rem;
+    height: 2rem;
+}
+
+.project-card__a:hover::before {
+    content: 'Ver sitio web';
+    color: var(--color-withe);
+    background-color: #727087;
+    font-size: 1.3rem;
+    width: 10rem;
+    height: 3rem;
+    position: absolute;
+    bottom: -207%;
+    left: -200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.project-card__a:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: .8rem solid transparent;
+    border-right: .8rem solid transparent;
+    border-bottom: .8rem solid #727087;
+    bottom: -57%;
+}
+
+.project-card__a--text:hover::before {
+    content: 'Ver codigo';
+}
+
+.project-card__icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
+}
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .project-card {
+        width: calc(80%);
+    }
+}
+
+@media (min-width: 768px) {
+
+    .project-card {
+        max-width: calc(50% - 10rem);
+    }
+}
+
+@media (min-width: 992px) {
+    .projects__container {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .projects__container {
+        max-width: 1140px;
+    }
+}

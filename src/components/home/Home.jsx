@@ -74,7 +74,7 @@ const Home = () => {
           </div>
         </div>
         <NavSocialMedia />
-        <div className="home__botton ">
+        <div className="home__botton flex">
           <Buttons
             word={'contratame'}
           />
