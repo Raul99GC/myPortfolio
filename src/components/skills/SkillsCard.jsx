@@ -6,7 +6,7 @@ const SkillsCard = ({ skill }) => {
 
   return (
     <div className='skill-card'>
-      <div style={skill.styles} className="skill-card__icon"></div>
+      <img src={skill.img} style={skill.styles} className="skill-card__icon"></img>
       <div className="skill-card__name-box">
         <p style={skill.styles} className='skill-card__name flex'>{skill.name}</p>
       </div>

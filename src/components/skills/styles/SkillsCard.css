@@ -9,8 +9,6 @@
 .skill-card__icon {
   width: 5rem;
   min-height: 5rem;
-  background: var(--img-path);
-  background-size: cover;
   filter: invert(47%) sepia(7%) saturate(1025%) hue-rotate(204deg) brightness(92%) contrast(85%);
   transition: var(--animation-3ms) ease;
 }
