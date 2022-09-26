@@ -2,20 +2,20 @@
 /* ********** Utilities  ********** */
 
 .btn-on {
-    transform: var(--trans-on-formHeader);
+    transform: translateX(0);
 }
 
 
 .btn-off {
-    transform: var(--trans-off-formHeader);
+    transform: translateX(-100%);
 }
 
 .content-on {
-    transform: var(--trans-on-all-content);
+    transform:translateX(0);
 }
 
 .content-off {
-    transform: var(--trans-off-all-content);
+    transform: translateX(29rem);
 }
 
 .flex {
@@ -74,6 +74,7 @@
 }
 
 .main {
+    position: relative;
     transition: var(--animation-6ms);
 }
 
@@ -95,7 +96,10 @@
     transform: translateX(-50%);
 }
 
-
+.spacer {
+    height: 10rem;
+    width: 100%;
+}
 
 
 @media (min-width: 576px) {
@@ -113,6 +117,7 @@
 @media (min-width: 992px) {
     .header-desktop {
         transform: translateX(0);
+        z-index: 1;
         
     }
 

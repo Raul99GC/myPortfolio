@@ -41,6 +41,7 @@ function App() {
             <Skills />
             <Projects />
             <ContactMe />
+            <div className="spacer"></div>
          </main>
       </div>
    )

@@ -8,7 +8,7 @@ import { Buttons } from '../shared/Buttons'
 
 const About = () => {
   return (
-    <section className='about flex'>
+    <section className='about flex' id='about-section'>
       <div className="about__container flex--column">
 
         <div className="about__title">
