@@ -4,23 +4,25 @@ import emailjs from '@emailjs/browser'
 import TitleName from '../shared/TitleName'
 import imgsvg from './assets/imgs/Inbox cleanup-amico.svg'
 
+
 const ContactMe = () => {
+
+   const serviceId = import.meta.env.VITE_SERVICE_ID
+   const templateId = import.meta.env.VITE_TEMPLATE_ID
+   const publicKeyId = import.meta.env.VITE_PUBLIC_KEY_ID
 
    const sendEmail = event => {
       event.preventDefault()
-      emailjs.sendForm('service_1tg61ak', 'template_n7zf4vi', event.target, 'hpmOcMvqc3lHAylfP')
+      emailjs.sendForm(serviceId, templateId, event.target, publicKeyId)
          .then(res => console.log(res))
          .catch(err => console.log(err))
 
    }
 
-   const a = () => {
-
-   }
 
 
    return (
-      <section className='contact-me'>
+      <section className='contact-me' id='contact-section'>
          <div className="contact-me__container">
             <div className="contact-me__title">
                <TitleName
@@ -33,7 +35,7 @@ const ContactMe = () => {
                <div className="contact-me__box-img">
                   <img src={imgsvg} alt="" className='contact-me__img' />
                </div>
-               <form className='contact-me__form flex--column' onSubmit={a} action="">
+               <form className='contact-me__form flex--column' onSubmit={sendEmail} action="">
                   <div className="contact-me__input-container">
                      <input className='contact-me__input' type="text" name='user_name' placeholder='Su Nombre' />
                   </div>

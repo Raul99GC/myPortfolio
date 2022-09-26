@@ -2,7 +2,7 @@ import React from 'react'
 import './assets/styles/About.css'
 
 import TitleName from '../shared/TitleName'
-import profileImage from '../../../public/profile-image.png'
+import profileImage from '/profile-image.png'
 import { Buttons } from '../shared/Buttons'
 
 
@@ -29,9 +29,7 @@ const About = () => {
               <div className="about__inf_column-left">
                 <p className='about__description-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet odit mollitia a provident, accusamus amet. Sit cumque, possimus non, et omnis numquam exercitationem iusto veritatis ipsum harum magnam animi?</p>
                 <div className="about__button-cv">
-                  <Buttons
-                    word={'Descargar CV'}
-                  />
+                  <a href="https://1drv.ms/b/s!ApcZ8hPpL2nreeSu-UJRgUKvitg?e=tohQgR" className="button" target="_blank">Descargar CV</a>
                 </div>
               </div>
               <div className="about__inf_column-rigth">

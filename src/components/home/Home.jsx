@@ -9,7 +9,8 @@ import { Buttons } from '../shared/Buttons'
 import { MouseScroll } from './MouseScroll'
 import ParallaxImages from './ParallaxImages'
 import { useRef } from 'react'
-import profileImage from '../../../public/profile-image.png'
+import profileImage from '/profile-image.png'
+import { Link } from "react-scroll";
 
 
 const Home = () => {
@@ -54,7 +55,7 @@ const Home = () => {
 
 
   return (
-    <section className='home '>
+    <section className='home ' id='home-section'>
       <div ref={parallax} className="parallax-container">
         <ParallaxImages />
       </div>
@@ -77,12 +78,21 @@ const Home = () => {
         <div className="home__botton flex">
           <Buttons
             word={'contratame'}
+            link={'contact-section'}
           />
         </div>
-        <a href="#" className="home__scroll flex--column">
-          <p className='home__p-scroll'>ir a abajo</p>
+
+        <Link
+            to="about-section"
+            spy={true}
+            smooth={true}
+            duration={100}
+            className="home__scroll flex--column"
+        >
+            <div className="mouse__wheel"></div>
+            <p className='home__p-scroll'>ir a abajo</p>
           <MouseScroll />
-        </a>
+        </Link>
       </div>
     </section>
   )

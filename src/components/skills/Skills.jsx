@@ -111,7 +111,7 @@ const Skills = () => {
 
 
   return (
-    <section className='skills'>
+    <section className='skills' id='skills-section'>
         <div className="skills__container">
             <div className="skills__title">
                 <TitleName  

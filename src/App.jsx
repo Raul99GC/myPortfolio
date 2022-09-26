@@ -9,11 +9,18 @@ import About from './components/about/About'
 import Skills from './components/skills/Skills'
 import Projects from './components/projects/Projects'
 import ContactMe from './components/contact/ContactMe'
+import { useEffect } from 'react'
 
 function App() {
-
    const [btMenu, setBtMenu] = useState(false)
 
+   const clickMain = () => {
+      if(btMenu) {
+         setBtMenu(false)
+      }
+   }
+
+   
    return (
 
       <div className="App">
@@ -35,7 +42,7 @@ function App() {
                />
             </div>
          </header>
-         <main className={`main ${btMenu ? 'content-off' : 'content-on'}`}>
+         <main onClick={clickMain} className={`main ${btMenu ? 'content-off' : 'content-on'}`}>
             <Home />
             <About />
             <Skills />
