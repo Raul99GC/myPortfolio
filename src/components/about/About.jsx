@@ -27,7 +27,7 @@ const About = () => {
             <div className="about__description-box">
 
               <div className="about__inf_column-left">
-                <p className='about__description-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eveniet odit mollitia a provident, accusamus amet. Sit cumque, possimus non, et omnis numquam exercitationem iusto veritatis ipsum harum magnam animi?</p>
+                <p className='about__description-text'>Hola! mi nombre es Raul Cordoba, soy desarollador Front-end, Back-end y amante de las tortugas, me encanta hacer nuevos proyectos que me desafien en capacidades analitica y tecnologicas, espero algun dia contribuir a la comunidad de desarollo web con mis conocimientos adquiridos</p>
                 <div className="about__button-cv">
                   <a href="https://1drv.ms/u/s!ApcZ8hPpL2nrdscb7svK-JR1SI8?e=xTW190" className="button" target="_blank">Descargar CV</a>
                 </div>
