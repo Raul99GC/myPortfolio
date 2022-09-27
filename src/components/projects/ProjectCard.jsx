@@ -1,7 +1,6 @@
 import React from 'react'
 import './assets/styles/ProyectCard.css'
 
-import imgkk from './assets/imgs/pokedex.png'
 import linkIcon from './assets/imgs/link-icon.svg'
 import linkGithub from './assets/imgs/github-icon.svg'
 
@@ -9,7 +8,7 @@ const ProjectCard = ({ project }) => {
    return (
       <div className='project-card'>
          <div className="project-card__container  ">
-            <a className='project-card__link-img' style={{ "--lik-img": "url('src/components/projects/assets/imgs/link-icon.svg')" }} href={project.linkDeploy} target="_blank">
+            <a className='project-card__link-img' href={project.linkDeploy} target="_blank">
                <img src={project.img} alt="proyect imagen" className="project-card-img" />
                
             </a>

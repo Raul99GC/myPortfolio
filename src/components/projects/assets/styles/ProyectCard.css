@@ -28,7 +28,7 @@
     display: block;
     width: 7rem;
     height: 7rem;
-    background: var(--lik-img);
+    background: url('../imgs/link-icon.svg');
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(82deg) brightness(105%) contrast(105%);
     background-size: 7rem;
     position: absolute;
