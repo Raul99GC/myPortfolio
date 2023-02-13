@@ -89,7 +89,6 @@ const Home = () => {
             duration={100}
             className="home__scroll flex--column"
         >
-            <div className="mouse__wheel"></div>
             <p className='home__p-scroll'>ir a abajo</p>
           <MouseScroll />
         </Link>
