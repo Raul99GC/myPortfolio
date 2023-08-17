@@ -6,6 +6,7 @@ import quotes from './assets/imgs/quotes.png'
 import rickAndMorty from './assets/imgs/rick-and-morty.png'
 import crud from './assets/imgs/crud_website.png'
 import pokedex from './assets/imgs/pokedex.png'
+import magues from './assets/imgs/magic-money-magues.png'
 import ProjectCard from './ProjectCard'
 
 const Projects = () => {
@@ -14,9 +15,9 @@ const Projects = () => {
     {
       name: 'Magic Money Mages (HACKATON)',
       information: `Landing page principalmente enfocada para mostrar el NFT Magic Money Mages para la hackaton de Etherfuse de solana en la cual podras ver los tokens que puedes obtener.`,
-      img: pokedex,
+      img: magues,
       tags: "#front-end #html #css #javascript #react #Nextjs, #wallet-adapter #solana/web3 #react-router #react-use #web3 #solana/web3.js #nodemailer ",
-      linkDeploy: "https://magics-money-mages.vercel.app/",
+      linkDeploy: "https://hackathon.etherfuse.com/projects/64d40143f703c73fa47cc76c",
       linkGit: "https://github.com/RaulCGVulc/Magic-Nft-Vercel"
 
     },
