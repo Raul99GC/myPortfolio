@@ -12,9 +12,17 @@ const Projects = () => {
 
   const projects = [
     {
+      name: 'Magic Money Mages (HACKATON)',
+      information: `Landing page principalmente enfocada para mostrar el NFT Magic Money Mages para la hackaton de Etherfuse de solana en la cual podras ver los tokens que puedes obtener.`,
+      img: pokedex,
+      tags: "#front-end #html #css #javascript #react #Nextjs, #wallet-adapter #solana/web3 #react-router #react-use #web3 #solana/web3.js #nodemailer ",
+      linkDeploy: "https://magics-money-mages.vercel.app/",
+      linkGit: "https://github.com/RaulCGVulc/Magic-Nft-Vercel"
+
+    },
+    {
       name: 'Pokedex',
-      information: `pagina web basada en la famosa serie llamada Pokemon, se muestra todos los Pokemones con una breve descripción y
-      sus estadísticas. Esta creado con las tecnologias HTML, CSS, React, Axios, Reactredux, React-Routes-Dom y uso de API`,
+      information: `pagina web basada en la famosa serie llamada Pokemon, se muestra todos los Pokemones con una breve descripción y sus estadísticas. Esta creado con las tecnologias HTML, CSS, React, Axios, Reactredux, React-Routes-Dom y uso de API`,
       img: pokedex,
       tags: "#front-end #html #css #javascript #react #redux #react-router",
       linkDeploy: "https://pokedexrcg.netlify.app/#/login",
