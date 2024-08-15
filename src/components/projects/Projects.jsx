@@ -17,7 +17,7 @@ const Projects = () => {
       information: `Landing page principalmente enfocada para mostrar el NFT Magic Money Mages para la hackaton de Etherfuse de solana en la cual podras ver los tokens que puedes obtener.`,
       img: magues,
       tags: "#front-end #html #css #javascript #react #Nextjs, #wallet-adapter #solana/web3 #react-router #react-use #web3 #solana/web3.js #nodemailer ",
-      linkDeploy: "https://hackathon.etherfuse.com/projects/64d40143f703c73fa47cc76c",
+      linkDeploy: "https://magics-money-mages-earorncwq-raulcgvulc.vercel.app/",
       linkGit: "https://github.com/RaulCGVulc/Magic-Nft-Vercel"
 
     },
