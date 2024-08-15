@@ -46,15 +46,6 @@ const Projects = () => {
       linkDeploy: "https://crud-users-rcg.netlify.app/",
       linkGit: "https://github.com/Raul99GC/curd-users"
     },
-
-    {
-      name: 'Quotes card',
-      information: 'pagina en la que se muestra diferentes frases de diferentes autores completamente aleatorias, cuenta con un boton si se oprime se cambiara de frase junto con su color de fondo que igual mente es completamente aleatorio.',
-      img: quotes,
-      tags: "#front-end #html #css #javascript #react",
-      linkDeploy: "https://quotes-raulcg.netlify.app/",
-      linkGit: "https://github.com/Raul99GC/quotes-academlo"
-    },
   ]
 
   return (
